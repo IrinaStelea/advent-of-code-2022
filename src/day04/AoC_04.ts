@@ -3,7 +3,7 @@
 //parse the input
 const pathDay4 = require("path");
 const inputDay4: string[] = require("fs")
-    .readFileSync(pathDay4.resolve(__dirname, "../../inputs/AC04.txt"), "utf-8")
+    .readFileSync(path.resolve(__dirname, "../../inputs/AC04.txt"), "utf-8")
     .split("\n");
 
 //PART 1
