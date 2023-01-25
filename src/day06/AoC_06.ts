@@ -6,7 +6,7 @@ const inputDay6: string[] = require("fs")
     .readFileSync(pathDay6.resolve(__dirname, "../../inputs/AC06.txt"), "utf-8")
     .split("");
 
-const findChar = (buffer: number): number | void => {
+const findChar = (buffer: number): number => {
     let chunkOfChars: string = inputDay6[0];
 
     let count: number = 1;
@@ -26,12 +26,13 @@ const findChar = (buffer: number): number | void => {
             return i + 1; //because I started from i = 1
         }
     }
+    return -1;
 };
 
 //PART 1
-let partOne: number = findChar(4)!;
+let partOne: number = findChar(4);
 //console.log(partOne); //1034
 
 //PART 2
-let partTwo: number = findChar(14)!;
+let partTwo: number = findChar(14);
 //console.log(partTwo); //2472
